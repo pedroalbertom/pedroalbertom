@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo - Pedro Alberto Pontes</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm 13mm 10mm 13mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+      line-height: 1.34;
+      font-size: 9.1pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+    header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 5px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 21pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #0f172a;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+    .headline {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #334155;
+      margin-top: 3px;
+    }
+    .contact-bar {
+      margin-top: 5px;
+      font-size: 8.8pt;
+      color: #475569;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    section {
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 10.2pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+    p.summary {
+      text-align: justify;
+      color: #334155;
+      font-size: 9pt;
+      line-height: 1.38;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5px;
+      font-size: 8.8pt;
+      color: #334155;
+    }
+    .skills-grid strong {
+      color: #0f172a;
+    }
+    .experience-item {
+      margin-bottom: 7px;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .exp-title {
+      font-size: 9.6pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .exp-role {
+      font-weight: 600;
+      color: #2563eb;
+    }
+    .exp-date {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+    }
+    ul.bullets {
+      list-style-type: disc;
+      padding-left: 14px;
+      margin-top: 1.5px;
+    }
+    ul.bullets li {
+      font-size: 8.6pt;
+      color: #334155;
+      margin-bottom: 2.2px;
+      line-height: 1.34;
+      text-align: justify;
+    }
+    ul.bullets li strong {
+      color: #0f172a;
+    }
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 9pt;
+    }
+    .edu-institution {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .edu-details {
+      color: #334155;
+    }
+    .edu-date {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pedro Alberto Pontes</h1>
+    <div class="headline">Desenvolvedor Full-Stack | Engenheiro de Software</div>
+    <div class="contact-bar">
+      <span class="contact-item">📍 Fortaleza, CE</span>
+      <span class="contact-item">📞 (85) 99126-4792</span>
+      <span class="contact-item">✉️ <a href="mailto:pedroalbertompontes@gmail.com">pedroalbertompontes@gmail.com</a></span>
+      <span class="contact-item">🐙 <a href="https://github.com/pedroalbertom">github.com/pedroalbertom</a></span>
+      <span class="contact-item">💼 <a href="https://www.linkedin.com/in/pedroalbertom">linkedin.com/in/pedroalbertom</a></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Resumo Profissional</h2>
+    <p class="summary">
+      Desenvolvedor de Software com sólida formação em Ciência da Computação (UNIFOR) e experiência prática no desenvolvimento de sistemas web completos, APIs resilientes e aplicações reativas. Especialista no ecossistema TypeScript (NestJS, React 19) e Python, aplicando Clean Architecture, modelagem orientada a domínios (DDD) e testes automatizados (mais de 480 testes em suítes de produção). Experiência comprovada em controle de concorrência, filas assíncronas, modelagem relacional em PostgreSQL, estratégias de cache e mitigação de segurança com Redis e orquestração de ambientes com Docker e Traefik.
+    </p>
+  </section>
+
+  <section>
+    <h2>Competências Técnicas</h2>
+    <div class="skills-grid">
+      <div><strong>Back-End & Arquitetura:</strong> Node.js (NestJS, Express, Fastify), Python (FastAPI, Django), Java (Spring Boot, Quarkus), Clean Architecture, DDD, Outbox Pattern, REST APIs.</div>
+      <div><strong>Bancos de Dados & Cache:</strong> PostgreSQL, Redis (Distributed Lock, Throttling, Gerenciamento de Sessão), TypeORM, Modelagem Relacional, Migrations.</div>
+      <div><strong>Front-End:</strong> React 19, TypeScript, Vite, TanStack Router & TanStack Query, Next.js, Angular, Tailwind CSS, Gerenciamento de Estado & Cache.</div>
+      <div><strong>DevOps, Segurança & QA:</strong> Docker, Traefik (TLS automático), Nginx, Git, CI/CD, Jest, Vitest, Pytest, Cookies HttpOnly/SameSite, Hardening OWASP.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experiência Profissional</h2>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-title">SigaOferta — Plataforma Inteligente de Varejo <span class="exp-role">| Desenvolvedor Full-Stack Web</span></div>
+        <div class="exp-date">2025 – Presente</div>
+      </div>
+      <ul class="bullets">
+        <li>Projetei e implementei a plataforma web (SPA e API REST) em <strong>TypeScript com NestJS 11 e React 19</strong>, integrando a interface do usuário aos serviços de mensageria e fluxo de rotas otimizadas.</li>
+        <li>Desenvolvi backend com TypeORM e PostgreSQL, implementando o <strong>Outbox Pattern</strong> e workers de campanhas com controle de concorrência segura via <code>FOR UPDATE SKIP LOCKED</code>.</li>
+        <li>Estruturei a suíte de testes com <strong>84 suítes e mais de 480 testes automatizados</strong>, garantindo integridade das regras de negócio, validação de DTOs e fluxos críticos.</li>
+        <li>Endureci a segurança de autenticação: controle de revogação de tokens (JWT com <code>jti</code>), rate limiting e lockout com Redis em modo fail-closed e cookies <code>HttpOnly/SameSite=Strict</code>.</li>
+        <li>Desenvolvi a SPA reativa com <strong>React 19, Vite e TanStack (Router e Query)</strong>, implementando isolamento de cache privado por usuário e interface dinâmica de feira.</li>
+        <li>Orquestrei a infraestrutura em containers <strong>Docker</strong> com proxy reverso <strong>Traefik</strong> (terminação TLS/HTTPS automática) e Nginx para servir estáticos e rotear a API.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-title">Laboratório de Pesquisa e Inovação Vortex <span class="exp-role">| Desenvolvedor Full-Stack</span></div>
+        <div class="exp-date">2024 – 2025</div>
+      </div>
+      <ul class="bullets">
+        <li>Atuei no ciclo completo de desenvolvimento de software em projetos de inovação tecnológica, desde o levantamento e refinamento de requisitos até a entrega em produção.</li>
+        <li>Modelei esquemas de dados relacionais e desenvolvi APIs RESTful escaláveis, seguras e documentadas com OpenAPI/Swagger.</li>
+        <li>Construí interfaces web dinâmicas, responsivas e acessíveis utilizando <strong>Next.js e Angular</strong>, integradas a pipelines de integração contínua.</li>
+        <li>Padronizei ambientes de desenvolvimento e produção com <strong>Docker</strong>, simplificando a paridade de ambientes e o fluxo de trabalho da equipe.</li>
+        <li>Colaborei em time ágil com práticas de Scrum, code reviews sistemáticos e aderência rigorosa a padrões de Clean Code e arquitetura em camadas.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-title">Projeto Unimídia (Freelancer) <span class="exp-role">| Desenvolvedor Full-Stack</span></div>
+        <div class="exp-date">2024 – 2025</div>
+      </div>
+      <ul class="bullets">
+        <li>Projetei e implementei sistema web sob medida para gerenciamento, upload e consumo de conteúdos digitais e mídias.</li>
+        <li>Construí backend REST em Node.js com autenticação, validação estrita de payload (DTOs) e integração com banco de dados PostgreSQL.</li>
+        <li>Desenvolvi frontend responsivo com <strong>Next.js</strong>, priorizando performance de carregamento, consumo fluido de mídia e experiência do usuário (UX).</li>
+        <li>Realizei o versionamento estruturado com Git, mantendo rastreabilidade de entregas e deploys pontuais com alta satisfação do cliente.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Formação Acadêmica</h2>
+    <div class="edu-item">
+      <div>
+        <span class="edu-institution">Universidade de Fortaleza (UNIFOR)</span> — <span class="edu-details">Bacharelado em Ciência da Computação</span>
+      </div>
+      <div class="edu-date">2022 – Previsão de Conclusão: 2027</div>
+    </div>
+  </section>
+
+</body>
+</html>
